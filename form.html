@@ -1,0 +1,40 @@
+<form action="/daftar" method="/POST">
+    <main style="text-align: center;">
+    <body style="background-color:azure;">
+        <h1 style="text-align: center;">Pendaftaran</h1>
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" nama="email" required placeholder="Masukkan Email"><br>
+
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" minlength="8" required><br>
+        <input type="checkbox" onclick="myFunction()">Show password
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("pass");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+
+        <br><br><label for="birthday">Tanggal Lahir:</label><br>
+        <input type="date" id="birthday" name="birthday">
+        
+        <p>Jenis Kelamin:</p>
+        <input type="radio" id="lk" name="jk" value="L"> <label for="lk">Laki-laki</label><br>
+        <input type="radio" id="pr" name="jk" value="P"> <label for="pr">Perempuan</label><br>
+
+        <br><label for="bio">Bio Singkat:</label><br>
+        <textarea id="bio" name="bio" maxlength="100" placeholder="Lorem ipsum dolor sit amet..."></textarea>
+
+        <br><br><button type="submit">Daftar</button>
+        <input type="reset" value="Reset">
+    </body>
+    </main>
+</form>
