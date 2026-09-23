@@ -1,67 +1,114 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Website Saya</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Ciello Jonash</h1>
-        <nav>
-            <a href="#tentang">Tentang</a>
-            <a href="#skill">Keahlian</a>
-            <a href="#pengalaman">Pengalaman</a>
-            <a href="#plans">Plans</a>
-            <a href="#socials">Socials</a>
-        </nav>
-        <hr>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biji Coffee & Eatery</title>
 
-    <main>
-        <section id="tentang">
-            <h2>Tentang Saya</h2>
-            <p>Nama saya Ciello Jonash Chasyavie P.T, 
-                saya lahir di Kota Malang pada tanggal 21 Maret 2011 dan sekarang
-                sebagai siswa kelas X RPL 1 di SMK Telkom Malang belajar dasar-dasar pemrograman
-                menggunakan HTML dan JavaScript. Dulu saya siswa SMP Laboratorium UM sebagai siswa ICP,
-                sebelumnya itu juga saya dari SD Laboratorium UM dan di saat inilah saya mengikuti
-                ekskul robotik dan membuat robot dasar.
-            </p>
-        </section>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=block" rel="stylesheet">
 
-        <section id="skill">
-            <h2>Keahlian</h2>
-            <ul>
-                <li>Program Scratch</li>
-                <li>Dasar HTML</li>
-                <li>Dasar Pemrograman JavaScript</li>
-            </ul>
-        </section>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="brand">
+                <i class="fa fa-coffee"></i> Biji Coffee & Eatery
+            </a>
 
-        <section id="pengalaman">
-            <h2>Pengalaman</h2>
-            <ul>
-                <li>Membuat 2 game dalam Scratch untuk tugas sekolah</li>
-                <li>Berkontribusi membuat game dalam Roblox sebagai Builder & Scripter</li>
-                <li>Semoga tambah banyak daripada itu saja</li>
-            </ul>
-        </section>
+            <a href="index.html" class="active">
+                <i class="fa fa-fw fa-home"></i> Beranda</a>
+            <a href="menu.html">
+                <i class="fa fa-fw fa-cutlery"></i> Menu</a>
+            <a href="reservasi.html">
+                <i class="fa fa-fw fa-calendar"></i> Reservasi</a>
+            <a href="kontak.html">
+                <i class="fa fa-fw fa-envelope"></i> Kontak</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
-        <section id="plans">
-            <h2>Where Do I See Myself in 5 Years?</h2>
-            <p>Menjadi programmer yang sukses, bekerja/berkuliah di luar negeri, dan yap</p>
-        </section>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Biji Coffee & Eatery</h1>
+                <p>Biji Coffee & Eatery menghadirkan perpaduan sempurna antara kopi
+                    nusantara racikan barista terbaik dan 
+                    hidangan lezat dengan suasana hangat dan estetik.
+                </p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">
+                        <i class="fa fa-coffee"></i> Lihat Menu
+                    </a>
+                    <a href="reservasi.html" class="btn btn-secondary">
+                        <i class="fa fa-calendar"></i> Reservasi Meja
+                    </a>
+                </div>
+            </div>
+        </header>
 
-        <section id="socials">
-            <h2>Socials</h2>
-            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</p>
-            <a href="https://www.instagram.com/cijons.21/" target="_blank">Instagram</a>
-            <a href="https://github.com/CielloJonash" target="_blank">Github</a>
-        </section>
-    </main>
+        <main>
+            <section class="best-sellers">
+                <h2>Menu Favorit Kami</h2>
 
-    <footer>
-        <p>&copy; 2026 Ciello Jonash real no fake</p>
-    </footer>
-</body>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="ArenLatte.webp" alt="Signature Aren Latte" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Signature Aren Latte</h3>
+                            <p>Rp. 25.000</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="CaramelMacchiato.jpg" alt="Caramel Macchiato" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Caramel Macchiato</h3>
+                            <p>Rp. 31.000</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="Nasgor.jpg" alt="Nasi Goreng Biji" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Nasi Goreng Biji</h3>
+                            <p>Rp. 36.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="menu.html" class="view-menu-link">Lihat Menu Lengkap Kami
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </section>
+        </main>
+
+        <script>
+           function myFunction() {
+                var x = document.getElementById("myTopnav");
+                x.classList.toggle("responsive");
+            }
+        </script>
+
+        <footer>
+            <div class="footer-left">
+                <p>&copy; 2026 Biji Coffee & Eatery</p>
+                <p>Made with <i class="fa fa-heart"></i> For Coffee Enthusiasts.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
